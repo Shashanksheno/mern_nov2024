@@ -1,2 +1,2 @@
 # mern_nov2024
-we are going to learn mern stack including bootstrap and everything related to MERN
+Our department information science and engineering gave us oppotunity to learn about mern stack and i have learnt a lot about this
