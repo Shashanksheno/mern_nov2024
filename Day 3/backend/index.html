@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text and Color</title>
+</head>
+<body>
+    <div id="myDiv" style="font-size: 20px;">This is the original text</div>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="changeContent()">Change Paragraph Content</button>
+
+    <!-- Paragraphs to be modified -->
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+
+    <script>
+        function changeText() {
+            const element = document.getElementById("myDiv");
+            element.textContent = "This is the updated text!";
+        }
+
+        function changeColor() {
+            const element = document.getElementById("myDiv");
+            const colors = ["red", "blue", "green", "purple", "orange", "brown"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            element.style.color = randomColor;
+        }
+
+        function changeContent() {
+            const paragraphs = document.getElementsByTagName("p");
+
+            if (paragraphs.length >= 3) {
+                paragraphs[0].textContent = "This is the modified paragraph 1";
+                paragraphs[0].style.color = "red";
+                paragraphs[0].style.backgroundColor = "blue";
+
+                paragraphs[1].textContent = "This is the modified paragraph 2";
+                paragraphs[1].style.color = "blue";
+                paragraphs[1].style.backgroundColor = "white";
+
+                paragraphs[2].textContent = "This is the modified paragraph 3";
+                paragraphs[2].style.color = "green";
+                paragraphs[2].style.backgroundColor = "yellow";
+            }
+        }
+         function changeBox(){
+            const firstBox=document.querySelector(".box");
+            
+         }    </script>
+</body>
+</html>
+
